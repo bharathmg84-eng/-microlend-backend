@@ -30,7 +30,7 @@ app.add_middleware(
 DB_PATH = "microlend.db"
 
 # ── LOAD THE REAL TRAINED MODEL ──────────────────────────────────────────────
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "microlend_model.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "microlend_model.pkl")
 if not os.path.exists(MODEL_PATH):
     raise RuntimeError(
         f"\n\nModel file not found at {MODEL_PATH}.\n"
